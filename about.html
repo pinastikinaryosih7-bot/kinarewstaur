@@ -247,80 +247,83 @@ https://www.tooplate.com/view/2129-crispy-kitchen
         </footer>
 
         <!-- Modal -->
-        <div class="modal fade" id="BookingModal" tabindex="-1" aria-labelledby="Pemesanan" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered modal-xl">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h3 class="mb-0">Reservasi Meja</h3>
+        <!-- Modal -->
+<div class="modal fade" id="BookingModal" tabindex="-1" aria-labelledby="BookingModal" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-content">
+            
+            <div class="modal-header">
+                <h3 class="mb-0">Pesan Tempat</h3>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
 
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Tutup"></button>
-                    </div>
+            <div class="modal-body d-flex flex-column justify-content-center">
+                <form class="custom-form booking-form" action="#" method="post" role="form">
+                    <div class="row">
+                        <!-- 1. NAMA LENGKAP -->
+                        <div class="col-lg-6 col-12">
+                            <label for="name" class="form-label">Nama Lengkap</label>
+                            <input type="text" name="name" id="name" class="form-control" placeholder="Nama lengkap Anda" required>
+                        </div>
 
-                    <div class="modal-body d-flex flex-column justify-content-center">
-                        <div class="booking">
-                            
-                            <form class="booking-form row" role="form" action="#" method="post">
-                                <div class="col-lg-6 col-12">
-                                    <label for="name" class="form-label">Nama Lengkap</label>
+                        <!-- 2. ALAMAT EMAIL -->
+                        <div class="col-lg-6 col-12">
+                            <label for="email" class="form-label">Alamat Email</label>
+                            <input type="email" name="email" id="email" pattern="[^ @]*@[^ @]*" class="form-control" placeholder="nama@email.com" required>
+                        </div>
 
-                                    <input type="text" name="name" id="name" class="form-control" placeholder="Nama" required>
-                                </div>
+                        <!-- 3. NOMOR TELEPON -->
+                        <div class="col-lg-6 col-12">
+                            <label for="phone" class="form-label">Nomor Telepon</label>
+                            <input type="tel" name="phone" id="phone" class="form-control" placeholder="0812-3456-7890">
+                        </div>
 
-                                <div class="col-lg-6 col-12">
-                                    <label for="email" class="form-label">Alamat Email</label>
+                        <!-- 4. JUMLAH ORANG -->
+                        <div class="col-lg-6 col-12">
+                            <label for="people" class="form-label">Jumlah Orang</label>
+                            <input type="number" name="people" id="people" class="form-control" placeholder="Contoh: 2 Orang" min="1" required>
+                        </div>
 
-                                    <input type="email" name="email" id="email" pattern="[^ @]*@[^ @]*" class="form-control" placeholder="your@email.com" required>
-                                </div>
+                        <!-- 5. TANGGAL -->
+                        <div class="col-lg-6 col-12">
+                            <label for="date" class="form-label">Tanggal Kunjungan</label>
+                            <input type="date" name="date" id="date" class="form-control" required>
+                        </div>
 
-                                <div class="col-lg-6 col-12">
-                                    <label for="phone" class="form-label">Nomor Ponsel</label>
+                        <!-- 6. WAKTU / JAM -->
+                        <div class="col-lg-6 col-12">
+                            <label for="time" class="form-label">Jam Kedatangan</label>
+                            <select class="form-select form-control" name="time" id="time" required>
+                                <option value="" disabled selected hidden>Pilih Jam</option>
+                                <option value="12:00 PM">12:00 (Makan Siang)</option>
+                                <option value="01:00 PM">13:00</option>
+                                <option value="02:00 PM">14:00</option>
+                                <option value="05:00 PM">17:00 (Sore)</option>
+                                <option value="06:00 PM">18:00 (Makan Malam)</option>
+                                <option value="07:00 PM">19:00</option>
+                                <option value="08:00 PM">20:00</option>
+                            </select>
+                        </div>
 
-                                    <input type="telephone" name="phone" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" class="form-control" placeholder="123-456-7890">
-                                </div>
+                        <!-- 7. CATATAN KHUSUS -->
+                        <div class="col-12">
+                            <label for="message" class="form-label">Catatan Khusus (Opsional)</label>
+                            <textarea class="form-control" rows="4" id="message" name="message" placeholder="Tulis permintaan khusus di sini (misal: dekorasi ulang tahun, meja dekat jendela, dll.)"></textarea>
+                        </div>
 
-                                <div class="col-lg-6 col-12">
-                                    <label for="people" class="form-label">Jumlah Orang</label>
-
-                                    <input type="text" name="people" id="people" class="form-control" placeholder="12 persons">
-                                </div>
-
-                                <div class="col-lg-6 col-12">
-                                    <label for="date" class="form-label">Tanggal</label>
-
-                                    <input type="date" name="date" id="date" value="" class="form-control">
-                                </div>
-
-                                <div class="col-lg-6 col-12">
-                                    <label for="time" class="form-label">Waktu</label>
-
-                                    <select class="form-select form-control" name="time" id="time">
-                                      <option value="5" selected> 10;00 WIB</option>
-                                      <option value="6">12:00 WIB</option>
-                                      <option value="7">14:00 WIB</option>
-                                      <option value="8">16:00 WIB</option>
-                                      <option value="9">20:00 WIB</option>
-                                    </select>
-                                </div>
-
-                                <div class="col-12">
-                                    <label for="message" class="form-label">Permintaan Khusus</label>
-
-                                    <textarea class="form-control" rows="4" id="message" name="message" placeholder=""></textarea>
-                                </div>
-
-                                <div class="col-lg-4 col-12 ms-auto">
-                                    <button type="submit" class="form-control">Kirim Permintaan</button>
-                                </div>
-                            </form>
+                        <!-- TOMBOL SUBMIT -->
+                        <div class="col-lg-4 col-md-6 col-8 mx-auto mt-4">
+                            <button type="submit" class="form-control">Kirim Pesanan</button>
                         </div>
                     </div>
-
-                    <div class="modal-footer"></div>
-                    
-                </div>
-                
+                </form>
             </div>
+
+            <div class="modal-footer"></div>
+
         </div>
+    </div>
+</div>
 
         <!-- JAVASCRIPT FILES -->
         <script src="js/jquery.min.js"></script>
