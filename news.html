@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="id">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -7,14 +7,14 @@
         <meta name="description" content="">
         <meta name="author" content="">
 
-        <title>Crispy Kitchen - News Section</title>
+        <title> Westernome - Pembaruan Kami </title>
 
-        <!-- CSS FILES --> 
+        <!-- CSS FILES -->    
         <link rel="preconnect" href="https://fonts.googleapis.com">
         
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">                       
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">                    
         <link href="css/bootstrap.min.css" rel="stylesheet">
 
         <link href="css/bootstrap-icons.css" rel="stylesheet">
@@ -22,9 +22,9 @@
         <link href="css/tooplate-crispy-kitchen.css" rel="stylesheet">
 <!--
 
-Tooplate 2129 Crispy Kitchen
+Tooplate 2129 Westernome
 
-https://www.tooplate.com/view/2129-crispy-kitchen
+https://www.tooplate.com/view/2129-westernome
 
 -->
     </head>
@@ -38,21 +38,21 @@ https://www.tooplate.com/view/2129-crispy-kitchen
                 </button>
                 
                 <a class="navbar-brand" href="index.html">
-                    Crispy Kitchen
+                    Westernome
                 </a>
 
                 <div class="d-lg-none">
-                    <button type="button" class="custom-btn btn btn-danger" data-bs-toggle="modal" data-bs-target="#BookingModal">Reservation</button>
+                    <button type="button" class="custom-btn btn btn-danger" data-bs-toggle="modal" data-bs-target="#BookingModal">Reservasi</button>
                 </div>
 
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav mx-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="index.html">Home</a>
+                            <a class="nav-link" href="index.html">Beranda</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="about.html">Story</a>
+                            <a class="nav-link" href="about.html">Cerita</a>
                         </li>
 
                         <li class="nav-item">
@@ -60,17 +60,20 @@ https://www.tooplate.com/view/2129-crispy-kitchen
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link active" href="news.html">Our Updates</a>
+                            <a class="nav-link active" href="news.html">Pembaruan Kami</a>
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contact</a>
+                            <a class="nav-link" href="contact.html">Kontak</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="webkinar/index.html">Login</a>
                         </li>
                     </ul>
                 </div>
 
                 <div class="d-none d-lg-block">
-                    <button type="button" class="custom-btn btn btn-danger" data-bs-toggle="modal" data-bs-target="#BookingModal">Reservation</button>
+                    <button type="button" class="custom-btn btn btn-danger" data-bs-toggle="modal" data-bs-target="#BookingModal">Reservasi</button>
                 </div>
 
             </div>
@@ -78,14 +81,15 @@ https://www.tooplate.com/view/2129-crispy-kitchen
 
         <main>
 
+            <!-- HEADER HALAMAN BERITA -->
             <header class="site-header site-news-header">
                 <div class="container">
                     <div class="row">
 
                         <div class="col-lg-10 col-12 mx-auto">
-                            <h1 class="text-white">News &amp; Events</h1>
+                            <h1 class="text-white">Berita &amp; Acara</h1>
 
-                            <strong class="text-white">our latest updates, news, events and special promotions</strong>
+                            <strong class="text-white">pembaruan terbaru kami, berita, acara, dan promosi spesial</strong>
                         </div>
 
                     </div>
@@ -94,40 +98,45 @@ https://www.tooplate.com/view/2129-crispy-kitchen
                 <div class="overlay"></div>
             </header>
 
+            <!-- BAGIAN UTAMA: PEMBARUAN TERBARU (KARTU BESAR SINKRON DENGAN INDEX) -->
             <section class="news section-padding bg-white">
                 <div class="container">
                     <div class="row">
 
-                        <h2 class="mb-lg-5 mb-4">Latest Updates</h2>
+                        <div class="col-12">
+                            <h2 class="mb-lg-5 mb-4">Pembaruan Terbaru</h2>
+                        </div>
                         
+                        <!-- KARTU BESAR 1: Panduan Memilih Makanan Sehat -->
                         <div class="col-lg-6 col-md-6 col-12">
-                            <div class="news-thumb mb-4">
+                            <div class="news-thumb mb-4" style="position: relative; overflow: hidden; border-radius: 10px;">
                                 <a href="news-detail.html">
-                                    <img src="images/news/pablo-merchan-montes-Orz90t6o0e4-unsplash.jpg" class="img-fluid news-image" alt="">
+                                    <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?auto=format&fit=crop&w=1000&q=80" class="img-fluid news-image" alt="Rahasia Diet Seimbang" style="width: 100%; height: 400px; object-fit: cover;">
                                 </a>
                                 
-                                <div class="news-text-info news-text-info-large">
-                                    <span class="category-tag bg-danger">Featured</span>
+                                <div class="news-text-info news-text-info-large" style="position: absolute; bottom: 0; left: 0; right: 0; padding: 30px; background: linear-gradient(transparent, rgba(0,0,0,0.8));">
+                                    <span class="category-tag bg-danger text-white mb-2 d-inline-block" style="padding: 5px 15px; border-radius: 5px; font-size: 12px;">Rekomendasi</span>
 
-                                    <h5 class="news-title mt-2">
-                                        <a href="news-detail.html" class="news-title-link">How to make a healthy diet?</a>
-                                    </h5>
+                                    <h3 class="news-title" style="margin: 0;">
+                                        <a href="news-detail.html" class="news-title-link text-white" style="text-decoration: none; font-size: 24px; font-weight: bold;">Panduan Memilih Makanan Sehat Khas Barat</a>
+                                    </h3>
                                 </div>
                             </div> 
                         </div>
 
+                        <!-- KARTU BESAR 2: Tips Memulai Pola Makan Bersih -->
                         <div class="col-lg-6 col-md-6 col-12">
-                            <div class="news-thumb mb-4">
+                            <div class="news-thumb mb-4" style="position: relative; overflow: hidden; border-radius: 10px;">
                                 <a href="news-detail.html">
-                                    <img src="images/news/stefan-johnson-xIFbDeGcy44-unsplash.jpg" class="img-fluid news-image" alt="">
+                                    <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=1000&q=80" class="img-fluid news-image" alt="Kreasi Menu Organik" style="width: 100%; height: 400px; object-fit: cover;">
                                 </a>
                                 
-                                <div class="news-text-info news-text-info-large">
-                                    <span class="category-tag bg-danger">Featured</span>
+                                <div class="news-text-info news-text-info-large" style="position: absolute; bottom: 0; left: 0; right: 0; padding: 30px; background: linear-gradient(transparent, rgba(0,0,0,0.8));">
+                                    <span class="category-tag bg-danger text-white mb-2 d-inline-block" style="padding: 5px 15px; border-radius: 5px; font-size: 12px;">Rekomendasi</span>
 
-                                    <h5 class="news-title mt-2">
-                                        <a href="news-detail.html" class="news-title-link">Happy Living and happy eating tips</a>
-                                    </h5>
+                                    <h3 class="news-title" style="margin: 0;">
+                                        <a href="news-detail.html" class="news-title-link text-white" style="text-decoration: none; font-size: 24px; font-weight: bold;">Tips Memulai Pola Makan Bersih &amp; Teratur</a>
+                                    </h3>
                                 </div>
                             </div> 
                         </div>
@@ -136,64 +145,77 @@ https://www.tooplate.com/view/2129-crispy-kitchen
                 </div>
             </section>
 
+            <!-- BAGIAN KEDUA: BERITA & ACARA LAINNYA (KARTU KECIL SINKRON DENGAN INDEX) -->
             <section class="news section-padding">
                 <div class="container">
                     <div class="row">
 
                         <div class="col-12">
-                            <h2 class="mb-lg-5 mb-4">News &amp; Events</h2>
+                            <h2 class="mb-lg-5 mb-4">Berita &amp; Acara Lainnya</h2>
                         </div>
 
+                        <!-- KARTU KECIL 1: Khasiat Kelapa Murni -->
                         <div class="col-lg-4 col-md-6 col-12">
                             <div class="news-thumb mb-4">
-                                <a href="news-detail.html">
-                                    <img src="images/news/gilles-lambert-S_LhjpfIdm4-unsplash.jpg" class="img-fluid news-image" alt="">
-                                </a>
+                                <div class="news-image-wrap" style="border-radius: 10px; overflow: hidden;">
+                                    <a href="news-detail.html">
+                                        <img src="https://images.unsplash.com/photo-1560184475-cd3ef4d265bd?auto=format&fit=crop&w=800&q=80" class="img-fluid news-image" alt="Kelapa Murni" style="width: 100%; height: 240px; object-fit: cover;">
+                                    </a>
+                                </div>
                                 
-                                <div class="news-text-info">
-                                    <span class="category-tag me-3 bg-info">Promotions</span>
+                                <div class="news-text-info-small mt-3">
+                                    <div class="d-flex align-items-center mb-2">
+                                        <span class="category-tag bg-info text-white me-3" style="padding: 3px 10px; border-radius: 3px; font-size: 11px;">Promosi</span>
+                                        <small class="text-muted">18 Mei 2026</small>
+                                    </div>
 
-                                    <strong>12 April 2022</strong>
-
-                                    <h5 class="news-title mt-2">
-                                        <a href="news-detail.html" class="news-title-link">Is Coconut good for your health?</a>
-                                    </h5>
+                                    <h4 class="news-title" style="font-size: 18px; font-weight: bold;">
+                                        <a href="news-detail.html" class="news-title-link text-dark" style="text-decoration: none;">Manfaat Kelapa Murni Untuk Memasak</a>
+                                    </h4>
                                 </div>
                             </div> 
                         </div>
 
+                        <!-- KARTU KECIL 2: Menu Salmon Panggang -->
                         <div class="col-lg-4 col-md-6 col-12">
                             <div class="news-thumb mb-4">
-                                <a href="news-detail.html">
-                                    <img src="images/news/ella-olsson-mmnKI8kMxpc-unsplash.jpg" class="img-fluid news-image" alt="">
-                                </a>
+                                <div class="news-image-wrap" style="border-radius: 10px; overflow: hidden;">
+                                    <a href="news-detail.html">
+                                        <img src="https://images.unsplash.com/photo-1467003909585-2f8a72700288?auto=format&fit=crop&w=800&q=80" class="img-fluid news-image" alt="Salmon Panggang Lembut" style="width: 100%; height: 240px; object-fit: cover;">
+                                    </a>
+                                </div>
                                 
-                                <div class="news-text-info">
-                                    <span class="category-tag me-3 bg-info">Career</span>
+                                <div class="news-text-info-small mt-3">
+                                    <div class="d-flex align-items-center mb-2">
+                                        <span class="category-tag bg-dark text-white me-3" style="padding: 3px 10px; border-radius: 3px; font-size: 11px;">Berita</span>
+                                        <small class="text-muted">22 Mei 2026</small>
+                                    </div>
 
-                                    <strong>18 April 2022</strong>
-
-                                    <h5 class="news-title mt-2">
-                                        <a href="news-detail.html" class="news-title-link">How to run a sushi business?</a>
-                                    </h5>
+                                    <h4 class="news-title" style="font-size: 18px; font-weight: bold;">
+                                        <a href="news-detail.html" class="news-title-link text-dark" style="text-decoration: none;">Menu Salmon Panggang Terbaru Minggu Ini</a>
+                                    </h4>
                                 </div>
                             </div> 
                         </div>
 
+                        <!-- KARTU KECIL 3: Cara Mudah Meracik Salad -->
                         <div class="col-lg-4 col-md-6 col-12">
                             <div class="news-thumb mb-4">
-                                <a href="news-detail.html">
-                                    <img src="images/news/louis-hansel-GiIiRV0FjwU-unsplash.jpg" class="img-fluid news-image" alt="">
-                                </a>
+                                <div class="news-image-wrap" style="border-radius: 10px; overflow: hidden;">
+                                    <a href="news-detail.html">
+                                        <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=800&q=80" class="img-fluid news-image" alt="Panduan Salad Segar" style="width: 100%; height: 240px; object-fit: cover;">
+                                    </a>
+                                </div>
                                 
-                                <div class="news-text-info">
-                                    <span class="category-tag me-3 bg-info">Meeting</span>
+                                <div class="news-text-info-small mt-3">
+                                    <div class="d-flex align-items-center mb-2">
+                                        <span class="category-tag bg-info text-white me-3" style="padding: 3px 10px; border-radius: 3px; font-size: 11px;">Acara</span>
+                                        <small class="text-muted">30 Mei 2026</small>
+                                    </div>
 
-                                    <strong>30 April 2022</strong>
-
-                                    <h5 class="news-title mt-2">
-                                        <a href="news-detail.html" class="news-title-link">Learning a fine dining experience</a>
-                                    </h5>
+                                    <h4 class="news-title" style="font-size: 18px; font-weight: bold;">
+                                        <a href="news-detail.html" class="news-title-link text-dark" style="text-decoration: none;">Cara Mudah Meracik Salad Sayur Segar</a>
+                                    </h4>
                                 </div>
                             </div> 
                         </div>
@@ -205,133 +227,125 @@ https://www.tooplate.com/view/2129-crispy-kitchen
         </main>
 
         <footer class="site-footer section-padding">
-            
             <div class="container">
-                
                 <div class="row">
 
                     <div class="col-12">
-                        <h4 class="text-white mb-4 me-5">Crispy Kitchen</h4>
+                        <h4 class="text-white mb-4 me-5">Westernome</h4>
                     </div>
 
                     <div class="col-lg-4 col-md-7 col-xs-12 tooplate-mt30">
-                        <h6 class="text-white mb-lg-4 mb-3">Location</h6>
-
-                        <p>121 Einstein Loop N, Bronx, NY 10475, United States</p>
-
-                        <a href="https://goo.gl/maps/wZVGLA7q64uC1s886" class="custom-btn btn btn-dark mt-2">Directions</a>
+                        <h6 class="text-white mb-lg-4 mb-3">Lokasi</h6>
+                        <p>505 BulakSumur Depok Yogyakarta </p>
+                        <a href="https://goo.gl/maps/wZVGLA7q64uC1s886" class="custom-btn btn btn-dark mt-2">Titik Temu</a>
                     </div>
 
                     <div class="col-lg-4 col-md-5 col-xs-12 tooplate-mt30">
-                        <h6 class="text-white mb-lg-4 mb-3">Opening Hours</h6>
-
-                        <p class="mb-2">Monday - Friday</p>
-
-                        <p>10:00 AM - 08:00 PM</p>
-
-                        <p>Tel: <a href="tel: 010-02-0340" class="tel-link">010-02-0340</a></p>
+                        <h6 class="text-white mb-lg-4 mb-3">Jam Buka</h6>
+                        <p class="mb-2">Senin - Minggu</p>
+                        <p>10:00 WIB - 23:00 WIB</p>
+                        <p>Telepon: <a href="telepon: 089634879012" class="tel-link">089634879012</a></p>
                     </div>
 
                     <div class="col-lg-4 col-md-6 col-xs-12 tooplate-mt30">
-                        <h6 class="text-white mb-lg-4 mb-3">Social</h6>
-
+                        <h6 class="text-white mb-lg-4 mb-3">Sosial</h6>
                         <ul class="social-icon">
                             <li><a href="#" class="social-icon-link bi-facebook"></a></li>
-
                             <li><a href="#" class="social-icon-link bi-instagram"></a></li>
-
-                            <li><a href="#" class="social-icon-link bi-twitter"></a></li>
-
+                            <li><a href="https://twitter.com/search?q=tooplate.com&src=typed_query&f=live" target="_blank" class="social-icon-link bi-twitter"></a></li>
                             <li><a href="#" class="social-icon-link bi-youtube"></a></li>
                         </ul>
                     
-                        <p class="copyright-text tooplate-mt60">Copyright © 2022 Crispy Kitchen Co., Ltd.
+                        <p class="copyright-text tooplate-mt60">Copyright © 2022 Westernome., Ltd.
                         <br>Design: <a rel="nofollow" href="https://www.tooplate.com/" target="_blank">Tooplate</a></p>
-                        
                     </div>
 
-                </div><!-- row ending -->
-                
-             </div><!-- container ending -->
-             
+                </div>
+             </div>
         </footer>
 
-        <!-- Modal -->
+        <!-- Modal Reservasi -->
         <div class="modal fade" id="BookingModal" tabindex="-1" aria-labelledby="BookingModal" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered modal-xl">
                 <div class="modal-content">
+                    
                     <div class="modal-header">
-                        <h3 class="mb-0">Reserve a table</h3>
-
+                        <h3 class="mb-0">Pesan Tempat</h3>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
 
                     <div class="modal-body d-flex flex-column justify-content-center">
-                        <div class="booking">
-                            
-                            <form class="booking-form row" role="form" action="#" method="post">
-                                <div class="col-lg-6 col-12">
-                                    <label for="name" class="form-label">Full Name</label>
+                        <form class="custom-form booking-form row" action="#" method="post" role="form">
+                            <!-- 1. NAMA LENGKAP -->
+                            <div class="col-lg-6 col-12">
+                                <label for="name" class="form-label">Nama Lengkap</label>
+                                <input type="text" name="name" id="name" class="form-control" placeholder="Nama lengkap Anda" required>
+                            </div>
 
-                                    <input type="text" name="name" id="name" class="form-control" placeholder="Your Name" required>
-                                </div>
+                            <!-- 2. ALAMAT EMAIL -->
+                            <div class="col-lg-6 col-12">
+                                <label for="email" class="form-label">Alamat Email</label>
+                                <input type="email" name="email" id="email" pattern="[^ @]*@[^ @]*" class="form-control" placeholder="nama@email.com" required>
+                            </div>
 
-                                <div class="col-lg-6 col-12">
-                                    <label for="email" class="form-label">Email Address</label>
+                            <!-- 3. NOMOR TELEPON -->
+                            <div class="col-lg-6 col-12">
+                                <label for="phone" class="form-label">Nomor Telepon</label>
+                                <input type="tel" name="phone" id="phone" class="form-control" placeholder="0812-3456-7890">
+                            </div>
 
-                                    <input type="email" name="email" id="email" pattern="[^ @]*@[^ @]*" class="form-control" placeholder="your@email.com" required>
-                                </div>
+                            <!-- 4. JUMLAH ORANG -->
+                            <div class="col-lg-6 col-12">
+                                <label for="people" class="form-label">Jumlah Orang</label>
+                                <input type="number" name="people" id="people" class="form-control" placeholder="Contoh: 2 Orang" min="1" required>
+                            </div>
 
-                                <div class="col-lg-6 col-12">
-                                    <label for="phone" class="form-label">Phone Number</label>
+                            <!-- 5. TANGGAL -->
+                            <div class="col-lg-6 col-12">
+                                <label for="date" class="form-label">Tanggal Kunjungan</label>
+                                <input type="date" name="date" id="date" class="form-control" required>
+                            </div>
 
-                                    <input type="telephone" name="phone" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" class="form-control" placeholder="123-456-7890">
-                                </div>
+                            <!-- 6. WAKTU / JAM -->
+                            <div class="col-lg-6 col-12">
+                                <label for="time" class="form-label">Jam Kedatangan</label>
+                                <select class="form-select form-control" name="time" id="time" required>
+                                    <option value="" disabled selected hidden>Pilih Jam</option>
+                                    <option value="12:00 PM">12:00 (Makan Siang)</option>
+                                    <option value="01:00 PM">13:00</option>
+                                    <option value="02:00 PM">14:00</option>
+                                    <option value="05:00 PM">17:00 (Sore)</option>
+                                    <option value="06:00 PM">18:00 (Makan Malam)</option>
+                                    <option value="07:00 PM">19:00</option>
+                                    <option value="08:00 PM">20:00</option>
+                                </select>
+                            </div>
 
-                                <div class="col-lg-6 col-12">
-                                    <label for="people" class="form-label">Number of persons</label>
+                            <!-- 7. CATATAN KHUSUS -->
+                            <div class="col-12">
+                                <label for="message" class="form-label">Catatan Khusus (Opsional)</label>
+                                <textarea class="form-control" rows="4" id="message" name="message" placeholder="Tulis permintaan khusus di sini (misal: dekorasi ulang tahun, meja dekat jendela, dll.)"></textarea>
+                            </div>
 
-                                    <input type="text" name="people" id="people" class="form-control" placeholder="12 persons">
-                                </div>
-
-                                <div class="col-lg-6 col-12">
-                                    <label for="date" class="form-label">Date</label>
-
-                                    <input type="date" name="date" id="date" value="" class="form-control">
-                                </div>
-
-                                <div class="col-lg-6 col-12">
-                                    <label for="time" class="form-label">Time</label>
-
-                                    <select class="form-select form-control" name="time" id="time">
-                                      <option value="5" selected>5:00 PM</option>
-                                      <option value="6">6:00 PM</option>
-                                      <option value="7">7:00 PM</option>
-                                      <option value="8">8:00 PM</option>
-                                      <option value="9">9:00 PM</option>
-                                    </select>
-                                </div>
-
-                                <div class="col-12">
-                                    <label for="message" class="form-label">Special Request</label>
-
-                                    <textarea class="form-control" rows="4" id="message" name="message" placeholder=""></textarea>
-                                </div>
-
-                                <div class="col-lg-4 col-12 ms-auto">
-                                    <button type="submit" class="form-control">Submit Request</button>
-                                </div>
-                            </form>
-                        </div>
+                            <!-- TOMBOL SUBMIT -->
+                            <div class="col-lg-4 col-md-6 col-8 mx-auto mt-4">
+                                <button type="submit" class="form-control">Kirim Pesanan</button>
+                            </div>
+                        </form>
                     </div>
 
                     <div class="modal-footer"></div>
-                    
                 </div>
-                
             </div>
         </div>
         
+        <!-- JAVASCRIPT FILES -->
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/custom.js"></script>
+
+    </body>
+</html>
         <!-- JAVASCRIPT FILES -->
         <script src="js/jquery.min.js"></script>
         <script src="js/bootstrap.bundle.min.js"></script>
