@@ -11,26 +11,16 @@
 
         <!-- CSS FILES -->  
         <link rel="preconnect" href="https://fonts.googleapis.com">
-        
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">                      
         <link href="css/bootstrap.min.css" rel="stylesheet">
-
         <link href="css/bootstrap-icons.css" rel="stylesheet">
-
         <link href="css/tooplate-crispy-kitchen.css" rel="stylesheet">
-<!--
-
-Tooplate 2129 Westernome
-
-https://www.tooplate.com/view/2129-westernome
-
--->
     </head>
     
     <body>
         
+        <!-- NAVBAR NAVIGATION -->
         <nav class="navbar navbar-expand-lg bg-white shadow-lg">
             <div class="container">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -76,20 +66,17 @@ https://www.tooplate.com/view/2129-westernome
                 <div class="d-none d-lg-block">
                     <button type="button" class="custom-btn btn btn-danger" data-bs-toggle="modal" data-bs-target="#BookingModal">Reservasi</button>
                 </div>
-
             </div>
         </nav>
 
+        <!-- KONTEN UTAMA DINAMIS -->
         <main>
-
             <header class="site-header site-news-detail-header">
                 <div class="container">
                     <div class="row">
-
                         <div class="col-12">
-                            <h2>Mengenal Pengalaman Jamuan Makan Resmi (Fine Dining)</h2>
+                            <h2 id="news-main-title">Panduan Memilih Makanan Sehat Khas Barat</h2>
                         </div>
-
                     </div>
                 </div>
             </header>
@@ -97,56 +84,41 @@ https://www.tooplate.com/view/2129-westernome
             <section class="news-detail section-padding pt-0">
                 <div class="container">
                     <div class="row">
-
                         <div class="col-lg-12 col-12">
-                            <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1200&q=80" class="img-fluid news-detail-image" alt="pengalaman fine dining" style="width: 100%; height: 500px; object-fit: cover; border-radius: 0 0 10px 10px;">
+                            <img id="news-image" src="https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&w=1200&q=80" class="img-fluid news-detail-image" alt="Gambar Berita" style="width: 100%; height: 500px; object-fit: cover; border-radius: 0 0 10px 10px;">
 
                             <div class="col-lg-10 col-10 mx-auto mt-5">
-                                
-                                <h4 class="mb-3">Pengalaman Fine-Dining Terbaik di Westernome</h4>
+                                <h4 id="news-sub-title" class="mb-3">Menyeimbangkan Cita Rasa Kuliner Barat dengan Pola Hidup Sehat</h4>
 
-                                <p>Menikmati hidangan bukan sekadar tentang rasa, melainkan sebuah seni perpaduan suasana, pelayanan premium, dan cita rasa yang berkelas. Di Westernome, kami merancang setiap detail sajian steak dan hidangan barat pilihan untuk membawa Anda pada petualangan kuliner yang tak terlupakan.</p>
-
-                                <ul class="list" style="padding-left: 20px;">
-                                    <li class="list-item mb-2">Menggunakan bahan-bahan impor segar bersertifikat premium.</li>
-                                    <li class="list-item mb-2">Teknik memasak otentik oleh koki berpengalaman.</li>
-                                    <li class="list-item mb-2">Suasana restoran yang tenang, intim, dan estetik untuk momen spesial Anda.</li>
-                                </ul>
-
-                                <p>Setiap menu diracik dengan presisi yang tinggi, mulai dari penataan piring yang cantik hingga pemilihan saus pelengkap yang pas. Komitmen kami adalah menyajikan kesempurnaan di atas meja makan Anda untuk memberikan kepuasan kuliner barat yang sesungguhnya.</p>
+                                <div id="news-body-content">
+                                    <!-- Isi berita utama otomatis muncul disini -->
+                                </div>
 
                                 <div class="ratio ratio-16x9 my-5">
                                     <iframe width="560" height="315" src="https://www.youtube.com/embed/6vebbDZxoKE?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                 </div>
 
-                                <p>Sembari menikmati suasana makan malam, Anda juga bisa memesan tempat terlebih dahulu melalui sistem reservasi online kami demi kenyamanan waktu luang bersama keluarga maupun pasangan tercinta tanpa perlu mengantre lama.</p>
-
-                                <h5 class="mt-4 mb-3">Resep Rahasia Steak dengan Saus Krim Spesial</h5>
-
-                                <p>Kunci kelembutan daging steak kami terletak pada proses penuaan (aging) yang tepat serta siraman saus krim mentega gurih beraroma rempah pilihan. Anda bisa merasakan harmoni kelembutan tekstur daging berpadu sempurna dengan kehangatan saus dalam setiap gigitan.</p>
+                                <div id="news-footer-content">
+                                    <!-- Penutup berita otomatis muncul disini -->
+                                </div>
                             </div>
                         </div>
-
                     </div>
                 </div>
             </section>
 
-            <!-- KOTAK KOMENTAR -->
+            <!-- KOLOM KOMENTAR -->
             <section class="comments section-padding">
                 <div class="container">
                     <div class="row">
-
                         <div class="col-12">
                             <h4 class="text-center mb-4">Kolom Komentar</h4>
                         </div>
 
                         <div class="col-lg-7 col-12 mx-auto">
                             <form class="custom-form comment-form" action="#" method="get" role="form">
-                            	
                                 <input type="text" name="comment-name" id="comment-name" class="form-control" placeholder="Nama Lengkap Anda" required>
-                                
                                 <input type="email" name="comment-email" id="comment-email" pattern="[^ @]*@[^ @]*" class="form-control" placeholder="Alamat Email Anda" required="">
-                            
                                 <textarea class="form-control" rows="5" id="comment" name="comment" placeholder="Tulis komentar atau pertanyaan Anda disini..." required></textarea>
 
                                 <div class="col-lg-3 col-4 mx-auto">
@@ -155,28 +127,23 @@ https://www.tooplate.com/view/2129-westernome
                             </form>
 
                             <div class="news-author d-flex flex-wrap align-items-center mt-5">
-                                <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80" class="img-fluid news-author-image" alt="Komentar 1" style="width: 60px; height: 60px; object-fit: cover; border-radius: 50%;">
-
+                                <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80" class="img-fluid news-author-image" alt="User 1" style="width: 60px; height: 60px; object-fit: cover; border-radius: 50%;">
                                 <div class="ms-4 w-50">
-                                    <p class="mb-2" style="font-size: 14px;">Steak saus krimnya juara banget! Dagingnya empuk dan tempatnya nyaman buat santai sore.</p>
+                                    <p class="mb-2" style="font-size: 14px;">Artikelnya informatif banget! Membantu banget buat tugas sekolah saya.</p>
                                     <a href="#" style="font-weight: bold; text-decoration: none; color: #dc3545;">Dinda Kirana</a>
                                 </div>
-
                                 <span class="ms-auto text-muted" style="font-size: 12px;">14 jam yang lalu</span>
                             </div>
 
                             <div class="news-author d-flex flex-wrap align-items-center mt-4">
-                                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&q=80" class="img-fluid news-author-image" alt="Komentar 2" style="width: 60px; height: 60px; object-fit: cover; border-radius: 50%;">
-
+                                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&q=80" class="img-fluid news-author-image" alt="User 2" style="width: 60px; height: 60px; object-fit: cover; border-radius: 50%;">
                                 <div class="ms-4 w-50">
-                                    <p class="mb-2" style="font-size: 14px;">Pelayanannya ramah banget, cocok buat tempat merayakan acara anniversary bareng keluarga.</p>
+                                    <p class="mb-2" style="font-size: 14px;">Penulisan opsinya rapi dan detail menunya lengkap. Westernome emang top!</p>
                                     <a href="#" style="font-weight: bold; text-decoration: none; color: #dc3545;">Bintang Mahendra</a>
                                 </div>
-
                                 <span class="ms-auto text-muted" style="font-size: 12px;">3 hari yang lalu</span>
                             </div>
                         </div>
-
                     </div>
                 </div>
             </section>
@@ -185,23 +152,20 @@ https://www.tooplate.com/view/2129-westernome
             <section class="related-news section-padding bg-white">
                 <div class="container">
                     <div class="row">
-
-                        <h2 class="text-center mb-lg-5 mb-4">Berita Terkait</h2>
+                        <h2 class="text-center mb-lg-5 mb-4">Berita Lainnya</h2>
 
                         <div class="col-lg-4 col-md-6 col-12">
                             <div class="news-thumb mb-4">
                                 <div style="border-radius: 10px; overflow: hidden;">
-                                    <a href="news-detail.html">
-                                        <img src="https://images.unsplash.com/photo-1560184475-cd3ef4d265bd?auto=format&fit=crop&w=800&q=80" class="img-fluid news-image" alt="Kelapa Murni" style="width: 100%; height: 240px; object-fit: cover;">
+                                    <a href="news-detail.html?id=3">
+                                        <img src="images/news/gilles-lambert-S_LhjpfIdm4-unsplash.jpg" class="img-fluid news-image" alt="Kelapa Murni" style="width: 100%; height: 240px; object-fit: cover;">
                                     </a>
                                 </div>
-                                
                                 <div class="news-text-info mt-3">
                                     <span class="category-tag bg-info text-white me-3" style="padding: 3px 10px; border-radius: 3px; font-size: 11px;">Promosi</span>
                                     <small class="text-muted">18 Mei 2026</small>
-
                                     <h5 class="news-title mt-2" style="font-size: 18px; font-weight: bold;">
-                                        <a href="news-detail.html" class="news-title-link text-dark" style="text-decoration: none;">Manfaat Kelapa Murni Untuk Memasak</a>
+                                        <a href="news-detail.html?id=3" class="news-title-link text-dark" style="text-decoration: none;">Manfaat Kelapa Murni Untuk Memasak</a>
                                     </h5>
                                 </div>
                             </div> 
@@ -210,17 +174,15 @@ https://www.tooplate.com/view/2129-westernome
                         <div class="col-lg-4 col-md-6 col-12">
                             <div class="news-thumb mb-4">
                                 <div style="border-radius: 10px; overflow: hidden;">
-                                    <a href="news-detail.html">
-                                        <img src="https://images.unsplash.com/photo-1467003909585-2f8a72700288?auto=format&fit=crop&w=800&q=80" class="img-fluid news-image" alt="Salmon Panggang" style="width: 100%; height: 240px; object-fit: cover;">
+                                    <a href="news-detail.html?id=4">
+                                        <img src="images/news/ella-olsson-mmnKI8kMxpc-unsplash.jpg" class="img-fluid news-image" alt="Salmon Panggang" style="width: 100%; height: 240px; object-fit: cover;">
                                     </a>
                                 </div>
-                                
                                 <div class="news-text-info mt-3">
                                     <span class="category-tag bg-dark text-white me-3" style="padding: 3px 10px; border-radius: 3px; font-size: 11px;">Berita</span>
                                     <small class="text-muted">22 Mei 2026</small>
-
                                     <h5 class="news-title mt-2" style="font-size: 18px; font-weight: bold;">
-                                        <a href="news-detail.html" class="news-title-link text-dark" style="text-decoration: none;">Menu Salmon Panggang Terbaru Minggu Ini</a>
+                                        <a href="news-detail.html?id=4" class="news-title-link text-dark" style="text-decoration: none;">Menu Salmon Panggang Terbaru Minggu Ini</a>
                                     </h5>
                                 </div>
                             </div> 
@@ -229,22 +191,19 @@ https://www.tooplate.com/view/2129-westernome
                         <div class="col-lg-4 col-md-6 col-12">
                             <div class="news-thumb mb-4">
                                 <div style="border-radius: 10px; overflow: hidden;">
-                                    <a href="news-detail.html">
-                                        <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=800&q=80" class="img-fluid news-image" alt="Salad Segar" style="width: 100%; height: 240px; object-fit: cover;">
+                                    <a href="news-detail.html?id=5">
+                                        <img src="images/news/louis-hansel-GiIiRV0FjwU-unsplash.jpg" class="img-fluid news-image" alt="Salad Segar" style="width: 100%; height: 240px; object-fit: cover;">
                                     </a>
                                 </div>
-                                
                                 <div class="news-text-info mt-3">
                                     <span class="category-tag bg-info text-white me-3" style="padding: 3px 10px; border-radius: 3px; font-size: 11px;">Acara</span>
                                     <small class="text-muted">30 Mei 2026</small>
-
                                     <h5 class="news-title mt-2" style="font-size: 18px; font-weight: bold;">
-                                        <a href="news-detail.html" class="news-title-link text-dark" style="text-decoration: none;">Cara Mudah Meracik Salad Sayur Segar</a>
+                                        <a href="news-detail.html?id=5" class="news-title-link text-dark" style="text-decoration: none;">Cara Mudah Meracik Salad Sayur Segar</a>
                                     </h5>
                                 </div>
                             </div> 
                         </div>
-
                     </div>
                 </div>
             </section>
@@ -253,72 +212,58 @@ https://www.tooplate.com/view/2129-westernome
             <section class="newsletter section-padding">
                 <div class="container">
                     <div class="row">
-
                         <div class="col-lg-6 col-12">
-                            <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=800&q=80" class="img-fluid newsletter-image" alt="newsletter kuliner" style="border-radius: 10px;">
+                            <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=800&q=80" class="img-fluid newsletter-image" alt="newsletter" style="border-radius: 10px;">
                         </div>
-
                         <div class="col-lg-6 col-12 d-flex align-items-center mt-5 mt-lg-0 mx-auto">
                             <div class="subscribe-form-wrap">
                                 <h4 class="mb-0">Buletin Berita Kami</h4>
-
                                 <p>Dapatkan info kuliner menarik setiap harinya</p>
-
                                 <form class="custom-form subscribe-form mt-4" role="form">
                                     <input type="email" name="subscribe-email" id="subscribe-email" pattern="[^ @]*@[^ @]*" class="form-control" placeholder="Alamat email Anda" required="">
-
                                     <button type="submit" class="form-control mb-3" id="subscribe">Berlangganan</button>
-
                                     <small>Dengan mendaftar, Anda menyetujui Pemberitahuan Privasi dan Kebijakan Data kami.</small>
                                 </form>
                             </div>
                         </div>
-
                     </div>
                 </div>
             </section>
-
         </main>
 
+        <!-- FOOTER -->
         <footer class="site-footer section-padding">
             <div class="container">
                 <div class="row">
-
                     <div class="col-12">
                         <h4 class="text-white mb-4 me-5">Westernome</h4>
                     </div>
-
                     <div class="col-lg-4 col-md-7 col-xs-12 tooplate-mt30">
                         <h6 class="text-white mb-lg-4 mb-3">Lokasi</h6>
                         <p>505 BulakSumur Depok Yogyakarta</p>
-                         <a href="https://maps.app.goo.gl/32KQip2AsoXQAXuQ9" class="custom-btn btn btn-dark mt-2">Titik Temu</a>
+                        <a href="https://goo.gl/maps/wZVGLA7q64uC1s886" class="custom-btn btn btn-dark mt-2">Titik Temu</a>
                     </div>
-
                     <div class="col-lg-4 col-md-5 col-xs-12 tooplate-mt30">
                         <h6 class="text-white mb-lg-4 mb-3">Jam Buka</h6>
                         <p class="mb-2">Senin - Minggu</p>
                         <p>10:00 WIB - 23:00 WIB</p>
                         <p>Telepon: <a href="tel:089634879012" class="tel-link">089634879012</a></p>
                     </div>
-
                     <div class="col-lg-4 col-md-6 col-xs-12 tooplate-mt30">
                         <h6 class="text-white mb-lg-4 mb-3">Sosial</h6>
                         <ul class="social-icon">
                             <li><a href="#" class="social-icon-link bi-facebook"></a></li>
                             <li><a href="#" class="social-icon-link bi-instagram"></a></li>
-                            <li><a href="https://twitter.com/search?q=tooplate.com&src=typed_query&f=live" target="_blank" class="social-icon-link bi-twitter"></a></li>
+                            <li><a href="https://twitter.com" target="_blank" class="social-icon-link bi-twitter"></a></li>
                             <li><a href="#" class="social-icon-link bi-youtube"></a></li>
                         </ul>
-                    
-                        <p class="copyright-text tooplate-mt60">Copyright © 2022 Westernome., Ltd.
-                        <br>Design: <a rel="nofollow" href="https://www.tooplate.com/" target="_blank">Tooplate</a></p>
+                        <p class="copyright-text tooplate-mt60">Copyright © 2022 Westernome., Ltd. Design: Tooplate</p>
                     </div>
-
                 </div>
              </div>
         </footer>
 
-        <!-- MODAL RESERVASI TEMPAT -->
+        <!-- MODAL RESERVASI -->
         <div class="modal fade" id="BookingModal" tabindex="-1" aria-labelledby="BookingModal" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered modal-xl">
                 <div class="modal-content">
@@ -326,67 +271,139 @@ https://www.tooplate.com/view/2129-westernome
                         <h3 class="mb-0">Pesan Tempat</h3>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
-
                     <div class="modal-body d-flex flex-column justify-content-center">
                         <div class="booking">
-                            
                             <form class="booking-form row" role="form" action="#" method="post">
+                                <div class="col-lg-6 col-12"><label class="form-label">Nama Lengkap</label><input type="text" class="form-control" placeholder="Nama lengkap Anda" required></div>
+                                <div class="col-lg-6 col-12"><label class="form-label">Alamat Email</label><input type="email" class="form-control" placeholder="nama@email.com" required></div>
+                                <div class="col-lg-6 col-12"><label class="form-label">Nomor Telepon</label><input type="tel" class="form-control" placeholder="0812-3456-7890"></div>
+                                <div class="col-lg-6 col-12"><label class="form-label">Jumlah Orang</label><input type="number" class="form-control" placeholder="Contoh: 2 Orang" min="1" required></div>
+                                <div class="col-lg-6 col-12"><label class="form-label">Tanggal Kunjungan</label><input type="date" class="form-control" required></div>
                                 <div class="col-lg-6 col-12">
-                                    <label for="name" class="form-label">Nama Lengkap</label>
-                                    <input type="text" name="name" id="name" class="form-control" placeholder="Nama lengkap Anda" required>
-                                </div>
-
-                                <div class="col-lg-6 col-12">
-                                    <label for="email" class="form-label">Alamat Email</label>
-                                    <input type="email" name="email" id="email" pattern="[^ @]*@[^ @]*" class="form-control" placeholder="nama@email.com" required>
-                                </div>
-
-                                <div class="col-lg-6 col-12">
-                                    <label for="phone" class="form-label">Nomor Telepon</label>
-                                    <input type="tel" name="phone" id="phone" class="form-control" placeholder="0812-3456-7890">
-                                </div>
-
-                                <div class="col-lg-6 col-12">
-                                    <label for="people" class="form-label">Jumlah Orang</label>
-                                    <input type="number" name="people" id="people" class="form-control" placeholder="Contoh: 2 Orang" min="1" required>
-                                </div>
-
-                                <div class="col-lg-6 col-12">
-                                    <label for="date" class="form-label">Tanggal Kunjungan</label>
-                                    <input type="date" name="date" id="date" class="form-control" required>
-                                </div>
-
-                                <div class="col-lg-6 col-12">
-                                    <label for="time" class="form-label">Jam Kedatangan</label>
-                                    <select class="form-select form-control" name="time" id="time" required>
-                                      <option value="" disabled selected hidden>Pilih Jam</option>
-                                      <option value="12:00 PM">12:00 (Makan Siang)</option>
-                                      <option value="01:00 PM">13:00</option>
-                                      <option value="02:00 PM">14:00</option>
-                                      <option value="05:00 PM">17:00 (Sore)</option>
-                                      <option value="06:00 PM">18:00 (Makan Malam)</option>
+                                    <label class="form-label">Jam Kedatangan</label>
+                                    <select class="form-select form-control" required>
+                                      <option value="12:00 PM">12:00</option>
+                                      <option value="06:00 PM">18:00</option>
                                       <option value="07:00 PM">19:00</option>
-                                      <option value="08:00 PM">20:00</option>
                                     </select>
                                 </div>
-
-                                <div class="col-12">
-                                    <label for="message" class="form-label">Catatan Khusus (Opsional)</label>
-                                    <textarea class="form-control" rows="4" id="message" name="message" placeholder="Tulis permintaan khusus di sini (misal: dekorasi ulang tahun, meja dekat jendela, dll.)"></textarea>
-                                </div>
-
-                                <div class="col-lg-4 col-12 ms-auto">
-                                    <button type="submit" class="form-control">Kirim Pesanan</button>
-                                </div>
+                                <div class="col-12"><label class="form-label">Catatan Khusus (Opsional)</label><textarea class="form-control" rows="4"></textarea></div>
+                                <div class="col-lg-4 col-12 ms-auto"><button type="submit" class="form-control">Kirim Pesanan</button></div>
                             </form>
                         </div>
                     </div>
-
                     <div class="modal-footer"></div>
                 </div>
             </div>
         </div>
 
+        <!-- JAVASCRIPT FILES -->
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/custom.js"></script>
+
+        <!-- LOGIC JAVASCRIPT: BERITA SESUAI URUTAN BARU -->
+        <script>
+            const urlParams = new URLSearchParams(window.location.search);
+            const newsId = urlParams.get('id');
+
+            const newsData = {
+                // ID 1: Panduan Memilih Makanan Sehat Khas Barat (Utama 1)
+                "1": {
+                    mainTitle: "Panduan Memilih Makanan Sehat Khas Barat",
+                    imgUrl: "https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&w=1200&q=80",
+                    subTitle: "Menyeimbangkan Cita Rasa Kuliner Barat dengan Pola Hidup Sehat",
+                    body: `<p>Makanan khas Barat atau *Western food* sering kali diidentikkan dengan porsi yang besar, penggunaan keju yang melimpah, serta daging merah olahan yang berat. Namun, sebenarnya ada banyak sekali pilihan menu sehat tersembunyi yang kaya akan nutrisi jika kita tahu cara memilih bahan baku serta mengombinasikannya dengan tepat untuk konsumsi nutrisi seimbang sehari-hari.</p>
+                           <p>Kunci utama menikmati hidangan barat tanpa mengorbankan kesehatan adalah dengan memperhatikan metode memasaknya secara detail. Menghindari teknik *deep frying* dan beralih ke makanan yang diproses minimal dapat membantu memangkas kalori jahat secara signifikan sekaligus mempertahankan vitamin esensial di dalamnya.</p>
+                           <ul class="list" style="padding-left: 20px;">
+                               <li class="list-item mb-2">Pilihlah metode memasak yang dipanggang (*grilled* atau *baked*) daripada digoreng dengan tepung tebal.</li>
+                               <li class="list-item mb-2">Perbanyak porsi sayuran hijau segar, tumisan ringan, atau salad sebagai pendamping utama sumber protein Anda.</li>
+                               <li class="list-item mb-2">Ganti saus berbasis krim kental yang tinggi lemak jenuh dengan saus minyak zaitun (*olive oil*), cuka apel, atau perasan lemon segar.</li>
+                           </ul>`,
+                    footer: `<p>Di Westernome Bulaksumur, kami berkomitmen untuk menyediakan pilihan hidangan yang tidak hanya memanjakan lidah, tetapi juga mendukung kebugaran tubuh Anda. Menggunakan bahan-bahan organik lokal berpadu dengan potongan daging pilihan, setiap sajian diproses secara higienis untuk menjaga kandungan vitamin dan protein di dalamnya tetap utuh untuk investasi tubuh bugar jangka panjang.</p>`
+                },
+
+                // ID 2: Tips Memulai Makan Sehat dan Teratur (Utama 2)
+                "2": {
+                    mainTitle: "Tips Memulai Pola Makan Bersih & Teratur",
+                    imgUrl: "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=1200&q=80",
+                    subTitle: "Langkah Awal Menuju Investasi Tubuh Bugar Tanpa Merasa Tersiksa",
+                    body: `<p>Mengubah kebiasaan makan dari yang serba instan dan tinggi penyedap rasa menuju pola makan bersih (*clean eating*) sering kali terasa berat di awal. Banyak orang mengira bahwa makan sehat berarti harus mengorbankan cita rasa dan hanya boleh mengonsumsi makanan rebusan yang hambar. Padahal, esensi utama dari pola makan bersih adalah kembali ke bahan makanan utuh (*whole foods*) yang minim proses pengolahan, tanpa harus kehilangan kelezatan hidangan itu sendiri.</p>
+                           <p>Selain memilih apa yang masuk ke dalam tubuh, mengatur jam makan secara teratur juga memegang peranan yang sangat krusial. Tubuh manusia memiliki jam biologis atau ritme sirkadian yang mengatur sistem metabolisme. Ketika kita makan di waktu yang konsisten setiap harinya, sistem pencernaan akan bekerja jauh lebih optimal dalam menyerap nutrisi dan membakar kalori, sehingga penumpukan lemak jahat bisa diminimalisir.</p>
+                           <ul class="list" style="padding-left: 20px;">
+                               <li class="list-item mb-2">**Kurangi Makanan Olahan Pabrik (Ultra-Processed Foods):** Sebisa mungkin ganti camilan keripik kemasan atau mi instan dengan buah-buahan segar, kacang-kacangan panggang, atau jajan pasar tradisional yang dikukus.</li>
+                               <li class="list-item mb-2">**Pahami Komposisi Piring Makan Anda:** Terapkan prinsip gizi seimbang. Isi setengah piring Anda dengan sayuran dan buah, seperempat dengan sumber protein (seperti dada ayam atau ikan), dan seperempat sisanya dengan karbohidrat kompleks.</li>
+                               <li class="list-item mb-2">**Atur Jadwal Makan dan Patuhi:** Buat jadwal tetap untuk sarapan, makan siang, dan makan malam. Usahakan untuk tidak makan berat di atas jam 7 malam agar lambung memiliki waktu yang cukup untuk beristirahat sebelum tidur.</li>
+                           </ul>`,
+                    footer: `<p>Kami di Westernome sangat memahami bahwa konsistensi adalah tantangan terbesar dalam mempertahankan pola hidup sehat. Oleh karena itu, seluruh menu yang kami racik di outlet kami selalu mencantumkan estimasi keseimbangan nutrisi yang ramah untuk tubuh Anda. Kami mengolah bahan-bahan segar secara higienis agar Anda tetap bisa menikmati makan malam mewah tanpa perlu merasa bersalah.</p>`
+                },
+
+                // ID 3: Minyak Kelapa Murni (Tambahan 1)
+                "3": {
+                    mainTitle: "Manfaat Kelapa Murni Untuk Memasak",
+                    imgUrl: "images/news/gilles-lambert-S_LhjpfIdm4-unsplash.jpg",
+                    subTitle: "Mengenal Virgin Coconut Oil (VCO) Sebagai Agen Penguat Rasa Hidangan Sehat",
+                    body: `<p>Minyak kelapa murni atau yang lebih populer dengan sebutan *Virgin Coconut Oil* (VCO) kini bukan lagi sekadar tren kesehatan, melainkan sudah menjadi bahan wajib di dapur-dapur restoran modern. Berbeda dengan minyak kelapa biasa, proses ekstraksi VCO dilakukan tanpa melalui pemanasan suhu tinggi atau penambahan bahan kimia, sehingga seluruh nutrisi alami, aroma segar khas kelapa, dan kandungan antioksidannya tetap terjaga dengan sempurna.</p>
+                           <p>Salah satu keunggulan terbesar minyak kelapa murni dalam dunia kuliner adalah titik asapnya (*smoke point*) yang relatif aman untuk metode memasak sehari-hari seperti menumis (*sauteing*) dan memanggang (*baking* atau *roasting*). Ketika digunakan untuk mengolah hidangan, minyak ini tidak mudah rusak menjadi lemak trans yang berbahaya bagi jantung, menjadikannya pilihan utama bagi mereka yang peduli pada investasi kesehatan jangka panjang.</p>
+                           <ul class="list" style="padding-left: 20px;">
+                               <li class="list-item mb-2">**Kaya Asam Laurat (MCFA):** Mengandung asam lemak rantai sedang yang langsung dialirkan ke hati untuk diubah menjadi energi instan, bukan ditimbun sebagai jaringan lemak tubuh.</li>
+                               <li class="list-item mb-2">**Efek Karamelisasi yang Sempurna:** Saat bersentuhan dengan panas wajan, VCO mengeluarkan aroma manis alami yang mampu mengekstraksi rasa gurih dari bumbu-bumbu organik tanpa bantuan penyedap rasa buatan.</li>
+                               <li class="list-item mb-2">**Mengurangi Penyerapan Minyak Berlebih:** Karakteristik minyak yang ringan membuat makanan tidak terkesan terlalu berminyak saat disajikan, sehingga tekstur luar hidangan panggangan tetap terasa renyah dan bersih.</li>
+                           </ul>`,
+                    footer: `<p>Di dapur Westernome Bulaksumur, kami menerapkan standar kuliner tinggi dengan mengintegrasikan minyak kelapa murni ke dalam saus siraman panggangan dan piringan *roasted vegetables* kami. Hasilnya? Karakteristik rasa sayuran panggangan seperti wortel baby dan asparagus menjadi jauh lebih keluar, manis, gurih, dan memiliki kilau estetik tanpa meninggalkan rasa seret di tenggorokan.</p>`
+                },
+
+                // ID 4: Menu Salmon Panggang (Tambahan 2)
+                "4": {
+                    mainTitle: "Menu Salmon Panggang Terbaru Minggu Ini",
+                    imgUrl: "images/news/ella-olsson-mmnKI8kMxpc-unsplash.jpg",
+                    subTitle: "Sajian Eksklusif Minggu Ini: Pan-Seared Salmon Norwegia Bertabur Salsa Tropis",
+                    body: `<p>Kabar gembira bagi para penikmat hidangan laut premium! Minggu ini, lini dapur Westernome resmi memperkenalkan menu andalan terbaru kami, yaitu *Pan-Seared Crispy Skin Salmon*. Melalui menu ini, koki utama kami ingin menampilkan bagaimana kelezatan alami ikan salmon berkelas dunia dapat dikunci dengan sempurna lewat teknik memasak yang presisi, tanpa menghilangkan nutrisi esensial di dalamnya.</p>
+                           <p>Daging ikan salmon yang digunakan diimpor langsung dari perairan dingin Norwegia, wilayah yang terkenal menghasilkan salmon dengan tekstur daging super lembut dan kandungan minyak ikan alami (Omega-3) tertinggi. Teknik pemanggangan di atas wajan datar dilakukan dengan sangat hati-hati: mematangkan bagian kulit luar hingga mencapai tingkat kerenyahan maksimal bak kerupuk, sementara bagian tengah daging tetap dijaga agar berwarna merah muda, berair (*juicy*), dan tidak kering (*overcooked*).</p>
+                           <ul class="list" style="padding-left: 20px;">
+                               <li class="list-item mb-2">**Sumber Omega-3 dan Protein Tinggi:** Bagus untuk menunjang kesehatan fungsi otak, sirkulasi darah, serta membantu pemulihan jaringan otot tubuh secara optimal.</li>
+                               <li class="list-item mb-2">**Saus Salsa Segar Pendamping:** Alih-alih menggunakan saus keju yang berat, kami memadukannya dengan potongan mangga podang, mentimun renyah, tomat ceri, dan siraman lemon segar untuk menyeimbangkan rasa gurih lemak salmon.</li>
+                               <li class="list-item mb-2">**Karbohidrat Kompleks yang Ramah Diet:** Sebagai karbohidrat pendamping, hidangan ini dilengkapi dengan *mashed potato* berbahan kentang lokal pilihan yang ditumbuk bersama sedikit mentega organik rendah kalori.</li>
+                           </ul>`,
+                    footer: `<p>Untuk memastikan setiap tamu mendapatkan kesegaran ikan yang maksimal, kami hanya mendatangkan bahan baku salmon ini dalam jumlah terbatas setiap harinya. Jika Anda sedang mencari menu makan malam romantis yang menyehatkan, kaya nutrisi, dan estetik, pastikan Anda memesan menu ini di Westernome sebelum kehabisan porsi harian.</p>`
+                },
+
+                // ID 5: Cara Meracik Salad Sayur (Tambahan 3)
+                "5": {
+                    mainTitle: "Cara Mudah Meracik Salad Sayur Segar",
+                    imgUrl: "images/news/louis-hansel-GiIiRV0FjwU-unsplash.jpg",
+                    subTitle: "Seni Mengolah Salad: Mengubah Sayuran Mentah Menjadi Hidangan Mewah dan Lezat",
+                    body: `<p>Banyak orang enggan mengonsumsi salad karena menganggap rasanya hambar, membosankan, atau teksturnya yang terlalu sulit dinikmati seperti memakan dedaunan mentah biasa. Padahal, jika diracik dengan formula dan urutan yang tepat, salad sayur segar khas Barat bisa menjadi salah satu hidangan pembuka yang paling dinanti karena kaya akan kejutan tekstur renyah dan ledakan rasa yang menyegarkan.</p>
+                           <p>Kunci utama dari kelezatan salad terletak pada dua aspek: tingkat kesegaran (*crispness*) dari dedaunan hijau yang digunakan serta keharmonisan rasa dari saus siram (*dressing*) penyeimbangnya. Mengombinasikan sayuran dengan berbagai spektrum warna juga sangat dianjurkan, bukan hanya untuk mempercantik tampilan visual piring, melainkan untuk memastikan tubuh Anda mendapatkan pasokan antioksidan dan vitamin yang beragam.</p>
+                           <ul class="list" style="padding-left: 20px;">
+                               <li class="list-item mb-2">**Trik Merendam di Air Es:** Setelah dicuci dan dipotong, rendam sayuran di dalam mangkuk berisi air es batu selama 5-7 menit. Proses ini mengunci kandungan air di dalam sel sayur sehingga teksturnya menjadi sangat kaku, garing, dan renyah saat digigit.</li>
+                               <li class="list-item mb-2">**Keringkan Secara Total:** Gunakan alat *salad spinner* atau tepuk-tepuk sayur dengan tisu dapur hingga kering. Sayur yang basah akan membuat saus *dressing* menjadi encer dan tidak bisa menempel pada permukaan daun.</li>
+                               <li class="list-item mb-2">**Rasio Dressing yang Sehat:** Hindari penggunaan mayones kemasan yang tinggi lemak jenuh. Raciklah *vinaigrette* sederhana dengan mencampurkan minyak zaitun ekstra murni, madu alami, sedikit perasan lemon, dan sejumput lada hitam bubuk.</li>
+                           </ul>`,
+                    footer: `<p>Melalui menu *Westernome House Salad*, kami membawa pengalaman meracik salad profesional ini langsung ke hadapan Anda. Semua pasokan sayuran kami dipanen dari kebun mitra lokal di area dataran tinggi Yogyakarta setiap pagi hari, memastikan kualitas kesegaran sayur tetap berada di level tertinggi saat disajikan di meja makan Anda.</p>`
+                }
+            };
+
+            // Eksekusi perubahan konten berdasarkan parameter URL
+            if (newsId && newsData[newsId]) {
+                document.getElementById('news-main-title').innerText = newsData[newsId].mainTitle;
+                document.getElementById('news-image').src = newsData[newsId].imgUrl;
+                document.getElementById('news-sub-title').innerText = newsData[newsId].subTitle;
+                document.getElementById('news-body-content').innerHTML = newsData[newsId].body;
+                document.getElementById('news-footer-content').innerHTML = newsData[newsId].footer;
+                document.title = "Westernome - " + newsData[newsId].mainTitle;
+            } else {
+                // Default jika link diklik langsung tanpa parameter id (diarahkan ke Berita 1)
+                document.getElementById('news-main-title').innerText = newsData["1"].mainTitle;
+                document.getElementById('news-image').src = newsData["1"].imgUrl;
+                document.getElementById('news-sub-title').innerText = newsData["1"].subTitle;
+                document.getElementById('news-body-content').innerHTML = newsData["1"].body;
+                document.getElementById('news-footer-content').innerHTML = newsData["1"].footer;
+            }
+        </script>
+
+    </body>
+</html>
         <!-- JAVASCRIPT FILES -->
         <script src="js/jquery.min.js"></script>
         <script src="js/bootstrap.bundle.min.js"></script>
