@@ -31,13 +31,17 @@ https://www.tooplate.com/view/2129-westernome
     </head>
     
     <body>
-        
+       
         <nav class="navbar navbar-expand-lg bg-white shadow-lg">
             <div class="container">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                
+                <div id="authArea" class="d-flex align-items-center">
+    <span id="userInfo" class="text-white me-3">Belum login</span>
+    <button onclick="goLogin()" class="btn btn-danger">LOGIN</button>
+</div>
+        </nav>
                 <a class="navbar-brand" href="index.html">
                     Westernome
                 </a>
@@ -615,7 +619,7 @@ https://www.tooplate.com/view/2129-westernome
         <script src="js/jquery.min.js"></script>
         <script src="js/bootstrap.bundle.min.js"></script>
         <script src="js/custom.js"></script>
-
+<script src="login/js/welcome.js"></script>
     </body>
 </html>
 
