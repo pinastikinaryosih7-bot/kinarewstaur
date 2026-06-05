@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Login V1</title>
+	<title>Westernome - Member Login</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 <!--===============================================================================================-->	
@@ -20,6 +20,19 @@
 	<link rel="stylesheet" type="text/css" href="css/util.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 <!--===============================================================================================-->
+	<style>
+		/* Style tambahan sesuai poin 10 LKPD untuk mempercantik pesan error */
+		.alert-custom {
+			background-color: #f8d7da;
+			color: #721c24;
+			padding: 10px;
+			border-radius: 25px;
+			text-align: center;
+			margin-top: 15px;
+			font-size: 14px;
+			border: 1px solid #f5c6cb;
+		}
+	</style>
 </head>
 <body>
 	
@@ -30,21 +43,24 @@
 					<img src="images/img-01.png" alt="IMG">
 				</div>
 
-				<form class="login100-form validate-form">
+				<!-- MODIFIKASI: Ditambahkan id="loginForm" sesuai LKPD -->
+				<form id="loginForm" class="login100-form validate-form">
 					<span class="login100-form-title">
 						Member Login
 					</span>
 
-					<div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
-						<input class="input100" type="text" name="email" placeholder="Email">
+					<!-- MODIFIKASI: Diubah dari Email menjadi Nama Pengguna & id="username" sesuai LKPD -->
+					<div class="wrap-input100 validate-input" data-validate = "Username wajib diisi">
+						<input id="username" class="input100" type="text" name="username" placeholder="Nama Pengguna..">
 						<span class="focus-input100"></span>
 						<span class="symbol-input100">
-							<i class="fa fa-envelope" aria-hidden="true"></i>
+							<i class="fa fa-user" aria-hidden="true"></i>
 						</span>
 					</div>
 
-					<div class="wrap-input100 validate-input" data-validate = "Password is required">
-						<input class="input100" type="password" name="pass" placeholder="Password">
+					<!-- MODIFIKASI: Ditambahkan id="password" sesuai LKPD -->
+					<div class="wrap-input100 validate-input" data-validate = "Password wajib diisi">
+						<input id="password" class="input100" type="password" name="pass" placeholder="Password..">
 						<span class="focus-input100"></span>
 						<span class="symbol-input100">
 							<i class="fa fa-lock" aria-hidden="true"></i>
@@ -52,10 +68,13 @@
 					</div>
 					
 					<div class="container-login100-form-btn">
-						<button class="login100-form-btn">
+						<button type="submit" class="login100-form-btn">
 							Login
 						</button>
 					</div>
+
+					<!-- MODIFIKASI: Tempat munculnya alert box notifikasi jika login gagal/sukses (Poin 10 LKPD) -->
+					<div id="alertBox" class="alert-custom" style="display:none;"></div>
 
 					<div class="text-center p-t-12">
 						<span class="txt1">
@@ -66,8 +85,9 @@
 						</a>
 					</div>
 
+					<!-- MODIFIKASI: Diarahkan ke file register.html -->
 					<div class="text-center p-t-136">
-						<a class="txt2" href="#">
+						<a class="txt2" href="register.html">
 							Create your Account
 							<i class="fa fa-long-arrow-right m-l-5" aria-hidden="true"></i>
 						</a>
@@ -76,9 +96,6 @@
 			</div>
 		</div>
 	</div>
-	
-	
-
 	
 <!--===============================================================================================-->	
 	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
@@ -96,6 +113,10 @@
 	</script>
 <!--===============================================================================================-->
 	<script src="js/main.js"></script>
+	
+	<!-- MODIFIKASI: Memanggil file otak login.js sesuai Langkah 5 & 8 LKPD -->
+	<script src="js/login.js"></script>
 
 </body>
+</html>
 </html>
