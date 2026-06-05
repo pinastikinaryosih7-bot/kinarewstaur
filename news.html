@@ -9,7 +9,6 @@
 
         <title> Westernome - Pembaruan Kami </title>
 
-        <!-- CSS FILES -->    
         <link rel="preconnect" href="https://fonts.googleapis.com">
         
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,13 +19,6 @@
         <link href="css/bootstrap-icons.css" rel="stylesheet">
 
         <link href="css/tooplate-crispy-kitchen.css" rel="stylesheet">
-<!--
-
-Tooplate 2129 Westernome
-
-https://www.tooplate.com/view/2129-westernome
-
--->
     </head>
     
     <body>
@@ -81,7 +73,6 @@ https://www.tooplate.com/view/2129-westernome
 
         <main>
 
-            <!-- HEADER HALAMAN BERITA -->
             <header class="site-header site-news-header">
                 <div class="container">
                     <div class="row">
@@ -98,7 +89,6 @@ https://www.tooplate.com/view/2129-westernome
                 <div class="overlay"></div>
             </header>
 
-            <!-- BAGIAN UTAMA: PEMBARUAN TERBARU (KARTU BESAR SINKRON DENGAN INDEX) -->
             <section class="news section-padding bg-white">
                 <div class="container">
                     <div class="row">
@@ -107,7 +97,6 @@ https://www.tooplate.com/view/2129-westernome
                             <h2 class="mb-lg-5 mb-4">Pembaruan Terbaru</h2>
                         </div>
                         
-                        <!-- KARTU BESAR 1: Panduan Memilih Makanan Sehat -->
                         <div class="col-lg-6 col-md-6 col-12">
                             <div class="news-thumb mb-4" style="position: relative; overflow: hidden; border-radius: 10px;">
                                 <a href="news-detail.html">
@@ -124,7 +113,6 @@ https://www.tooplate.com/view/2129-westernome
                             </div> 
                         </div>
 
-                        <!-- KARTU BESAR 2: Tips Memulai Pola Makan Bersih (Diarahkan ke news-detail-2.html) -->
                         <div class="col-lg-6 col-md-6 col-12">
                             <div class="news-thumb mb-4" style="position: relative; overflow: hidden; border-radius: 10px;">
                                 <a href="news-detail-2.html">
@@ -145,7 +133,6 @@ https://www.tooplate.com/view/2129-westernome
                 </div>
             </section>
 
-            <!-- BAGIAN KEDUA: BERITA & ACARA LAINNYA (KARTU KECIL SINKRON DENGAN INDEX) -->
             <section class="news section-padding">
                 <div class="container">
                     <div class="row">
@@ -154,7 +141,6 @@ https://www.tooplate.com/view/2129-westernome
                             <h2 class="mb-lg-5 mb-4">Berita &amp; Acara Lainnya</h2>
                         </div>
 
-                        <!-- KARTU KECIL 1: Khasiat Kelapa Murni (Diarahkan ke news-detail-3.html) -->
                         <div class="col-lg-4 col-md-6 col-12">
                             <div class="news-thumb mb-4">
                                 <div class="news-image-wrap" style="border-radius: 10px; overflow: hidden;">
@@ -176,7 +162,6 @@ https://www.tooplate.com/view/2129-westernome
                             </div> 
                         </div>
 
-                        <!-- KARTU KECIL 2: Menu Salmon Panggang (Diarahkan ke news-detail-4.html) -->
                         <div class="col-lg-4 col-md-6 col-12">
                             <div class="news-thumb mb-4">
                                 <div class="news-image-wrap" style="border-radius: 10px; overflow: hidden;">
@@ -198,7 +183,6 @@ https://www.tooplate.com/view/2129-westernome
                             </div> 
                         </div>
 
-                        <!-- KARTU KECIL 3: Cara Mudah Meracik Salad (Diarahkan ke news-detail-5.html) -->
                         <div class="col-lg-4 col-md-6 col-12">
                             <div class="news-thumb mb-4">
                                 <div class="news-image-wrap" style="border-radius: 10px; overflow: hidden;">
@@ -264,7 +248,6 @@ https://www.tooplate.com/view/2129-westernome
              </div>
         </footer>
 
-        <!-- Modal Reservasi -->
         <div class="modal fade" id="BookingModal" tabindex="-1" aria-labelledby="BookingModal" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered modal-xl">
                 <div class="modal-content">
@@ -276,37 +259,31 @@ https://www.tooplate.com/view/2129-westernome
 
                     <div class="modal-body d-flex flex-column justify-content-center">
                         <form class="custom-form booking-form row" action="#" method="post" role="form">
-                            <!-- 1. NAMA LENGKAP -->
                             <div class="col-lg-6 col-12">
                                 <label for="name" class="form-label">Nama Lengkap</label>
                                 <input type="text" name="name" id="name" class="form-control" placeholder="Nama lengkap Anda" required>
                             </div>
 
-                            <!-- 2. ALAMAT EMAIL -->
                             <div class="col-lg-6 col-12">
                                 <label for="email" class="form-label">Alamat Email</label>
                                 <input type="email" name="email" id="email" pattern="[^ @]*@[^ @]*" class="form-control" placeholder="nama@email.com" required>
                             </div>
 
-                            <!-- 3. NOMOR TELEPON -->
                             <div class="col-lg-6 col-12">
                                 <label for="phone" class="form-label">Nomor Telepon</label>
                                 <input type="tel" name="phone" id="phone" class="form-control" placeholder="0812-3456-7890">
                             </div>
 
-                            <!-- 4. JUMLAH ORANG -->
                             <div class="col-lg-6 col-12">
                                 <label for="people" class="form-label">Jumlah Orang</label>
                                 <input type="number" name="people" id="people" class="form-control" placeholder="Contoh: 2 Orang" min="1" required>
                             </div>
 
-                            <!-- 5. TANGGAL -->
                             <div class="col-lg-6 col-12">
                                 <label for="date" class="form-label">Tanggal Kunjungan</label>
                                 <input type="date" name="date" id="date" class="form-control" required>
                             </div>
 
-                            <!-- 6. WAKTU / JAM -->
                             <div class="col-lg-6 col-12">
                                 <label for="time" class="form-label">Jam Kedatangan</label>
                                 <select class="form-select form-control" name="time" id="time" required>
@@ -321,13 +298,11 @@ https://www.tooplate.com/view/2129-westernome
                                 </select>
                             </div>
 
-                            <!-- 7. CATATAN KHUSUS -->
                             <div class="col-12">
                                 <label for="message" class="form-label">Catatan Khusus (Opsional)</label>
                                 <textarea class="form-control" rows="4" id="message" name="message" placeholder="Tulis permintaan khusus di sini (misal: dekorasi ulang tahun, meja dekat jendela, dll.)"></textarea>
                             </div>
 
-                            <!-- TOMBOL SUBMIT -->
                             <div class="col-lg-4 col-md-6 col-8 mx-auto mt-4">
                                 <button type="submit" class="form-control">Kirim Pesanan</button>
                             </div>
@@ -339,7 +314,6 @@ https://www.tooplate.com/view/2129-westernome
             </div>
         </div>
         
-        <!-- JAVASCRIPT FILES -->
         <script src="js/jquery.min.js"></script>
         <script src="js/bootstrap.bundle.min.js"></script>
         <script src="js/custom.js"></script>
