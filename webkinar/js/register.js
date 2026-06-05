@@ -1,8 +1,15 @@
 document.getElementById('registerForm').addEventListener('submit', async function(e) {
     e.preventDefault();
-    const usernameInput = document.getElementById('username').value;
+    
+    // Username diatur statis menjadi "heri"
+    const usernameInput = "heri";
+    
+    // Email tetap mengambil nilai dinamis dari formulir input
     const emailInput = document.getElementById('email').value;
-    const passwordInput = document.getElementById('password').value;
+    
+    // Password diatur statis menjadi "123"
+    const passwordInput = "123";
+    
     const msg = document.getElementById('message');
 
     try {
